@@ -30,5 +30,10 @@ class testController extends Controller
         }else{
             return response()->json(['message'=>'The given data was invalid.','errors'=>['recaptcha_token'=>['reCAPTCHA verification failed.']]],422);
         }
-	} 
+	}
+
+    public function test()
+    {
+        echo "string";
+    } 
 }
